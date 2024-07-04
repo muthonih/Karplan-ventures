@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -12,7 +13,7 @@ header {
 }
 
 .navbar {
-    background: #00796b;
+    background: #cc0000;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -55,7 +56,7 @@ header {
 }
 
 .navbar .nav-links a:hover {
-    background: #004d40;
+    background: #a30000;
 }
 
 .hero-banner {
@@ -110,14 +111,72 @@ section:hover {
 }
 
 h2 {
-    color: #00796b;
-    border-bottom: 2px solid #00796b;
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
+/* Services Section */
+#services .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#services .service {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#services .service h3 {
+    color: #cc0000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#services .service p {
+    margin-bottom: 1rem;
+}
+
+#services .service button {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#services .service button:hover {
+    background: #a30000;
+}
+
+#services .renders {
+    display: flex;
+    gap: 1rem;
+}
+
+#services .renders img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Other Sections */
 ul {
     list-style-type: none;
     padding: 0;
@@ -134,14 +193,14 @@ ul li {
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     display: block;
     margin: 0.5rem 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    max-height: 700px;
+    max-height: 75%;
 }
 
 .project img:hover {
@@ -149,12 +208,29 @@ ul li {
 }
 
 footer {
-    background: #00796b;
+    background: #cc0000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: relative;
     width: 100%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top.show {
+    display: block;
 }
 
 .fade-in {
@@ -197,7 +273,7 @@ footer {
 
     .navbar .nav-links {
         flex-direction: column;
-        background: #00796b;
+        background: #cc0000;
         position: absolute;
         top: 100%;
         left: 0;
