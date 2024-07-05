@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const fadeElements = document.querySelectorAll('.fade-in');
 

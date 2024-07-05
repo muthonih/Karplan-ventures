@@ -13,7 +13,7 @@ header {
 }
 
 .navbar {
-    background: #cc0000;
+    background: maroon;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -56,11 +56,10 @@ header {
 }
 
 .navbar .nav-links a:hover {
-    background: #a30000;
+    background:rgb(214, 33, 33);
 }
 
 .hero-banner {
-    background-image: url('hero-banner.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -89,7 +88,7 @@ header {
 }
 
 main {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 6rem;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
@@ -112,7 +111,7 @@ section:hover {
 
 h2 {
     color: #cc0000;
-    border-bottom: 2px solid #cc0000;
+    border-bottom: 2px solid maroon;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -124,6 +123,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #services .service {
@@ -135,6 +136,12 @@ h2 {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.logo-img {
+    width: 100px; /* Adjust width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+  
 
 #services .service h3 {
     color: #cc0000;
@@ -166,13 +173,15 @@ h2 {
 
 #services .renders {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
 #services .renders img {
-    flex: 1;
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 800px;
+    max-height: 500px;
+    height: auto;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -208,7 +217,7 @@ ul li {
 }
 
 footer {
-    background: #cc0000;
+    background: maroon;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -220,7 +229,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #cc0000;
+    background: green;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
