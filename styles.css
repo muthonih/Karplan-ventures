@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -20,6 +19,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar .container {
@@ -59,12 +60,42 @@ header {
     background: rgb(214, 33, 33);
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 2000;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+.hamburger.toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .hero-banner {
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 8rem 2rem;
     text-align: center;
+    position: relative;
 }
 
 .hero-banner h1 {
@@ -158,7 +189,7 @@ h2 {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     margin-right: 0.5rem;
-    background: #cc0000;
+    background: rgb(202, 56, 56);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -290,9 +321,9 @@ footer {
         background: #cc0000;
         position: absolute;
         top: 100%;
+        display: none;
         left: 0;
         width: 100%;
-        display: none;
         padding: 1rem;
     }
 
@@ -319,6 +350,8 @@ footer {
         background-color: #fff;
         margin: 4px 0;
         transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
     }
 
     #services .renders img {
