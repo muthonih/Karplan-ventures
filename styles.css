@@ -129,7 +129,7 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 2rem;
-    background: rgb(214, 189, 157);
+    background: rgb(240, 228, 212);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -318,7 +318,7 @@ footer {
 
     .navbar .nav-links {
         flex-direction: column;
-        background: #cc0000;
+        background:maroon;
         position: absolute;
         top: 100%;
         display: none;
